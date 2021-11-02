@@ -159,9 +159,7 @@
         <type>Text</type>
     </nameField>
     <pluralLabel>Merchandises</pluralLabel>
-    <searchLayouts>
-        <searchResultsAdditionalFields>Merchandise_Price__c</searchResultsAdditionalFields>
-    </searchLayouts>
+    
     <sharingModel>Private</sharingModel>
     <visibility>Public</visibility>
     <fields>
@@ -172,16 +170,7 @@
         <trackTrending>false</trackTrending>
         <type>TextArea</type>
     </fields>
-    <fields>
-        <fullName>Merchandise_Price__c</fullName>
-        <externalId>false</externalId>
-        <label>Merchandise Price</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackTrending>false</trackTrending>
-        <type>Currency</type>
-    </fields>
+    
     <fields>
         <fullName>Merchandise_Stock__c</fullName>
         <externalId>false</externalId>
