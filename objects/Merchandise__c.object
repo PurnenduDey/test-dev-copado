@@ -165,89 +165,32 @@
     <sharingModel>Private</sharingModel>
     <visibility>Public</visibility>
     <fields>
-        <fullName>City__c</fullName>
+        <fullName>Merchandise_Desc__c</fullName>
         <externalId>false</externalId>
-        <label>City</label>
+        <label>Merchandise Desc</label>
         <required>false</required>
         <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <controllingField>Country__c</controllingField>
-            <restricted>true</restricted>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>KOLKATA</fullName>
-                    <default>false</default>
-                    <label>KOLKATA</label>
-                </value>
-                <value>
-                    <fullName>MUMBAI</fullName>
-                    <default>false</default>
-                    <label>MUMBAI</label>
-                </value>
-                <value>
-                    <fullName>NEW YORK</fullName>
-                    <default>false</default>
-                    <label>NEW YORK</label>
-                </value>
-                <value>
-                    <fullName>CHICAGO</fullName>
-                    <default>false</default>
-                    <label>CHICAGO</label>
-                </value>
-            </valueSetDefinition>
-            <valueSettings>
-                <controllingFieldValue>IND</controllingFieldValue>
-                <valueName>KOLKATA</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>IND</controllingFieldValue>
-                <valueName>MUMBAI</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>USA</controllingFieldValue>
-                <valueName>NEW YORK</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>USA</controllingFieldValue>
-                <valueName>CHICAGO</valueName>
-            </valueSettings>
-        </valueSet>
+        <type>TextArea</type>
     </fields>
     <fields>
-        <fullName>Country__c</fullName>
+        <fullName>Merchandise_Price__c</fullName>
         <externalId>false</externalId>
-        <label>Country</label>
+        <label>Merchandise Price</label>
+        <precision>18</precision>
         <required>false</required>
+        <scale>0</scale>
         <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>IND</fullName>
-                    <default>false</default>
-                    <label>IND</label>
-                </value>
-                <value>
-                    <fullName>USA</fullName>
-                    <default>false</default>
-                    <label>USA</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
+        <type>Currency</type>
     </fields>
     <fields>
-        <fullName>Merchandise_Stock_Add__c</fullName>
-        <caseSensitive>false</caseSensitive>
+        <fullName>Merchandise_Stock__c</fullName>
         <externalId>false</externalId>
-        <label>Merchandise Stock Add</label>
-        <length>100</length>
+        <label>Merchandise Stock</label>
+        <precision>18</precision>
         <required>false</required>
+        <scale>0</scale>
         <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>true</unique>
+        <type>Number</type>
+        <unique>false</unique>
     </fields>
 </CustomObject>
