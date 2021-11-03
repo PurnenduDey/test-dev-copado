@@ -148,124 +148,61 @@
     <enableFeeds>false</enableFeeds>
     <enableHistory>false</enableHistory>
     <enableLicensing>false</enableLicensing>
-    <enableReports>true</enableReports>
+    <enableReports>false</enableReports>
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>Private</externalSharingModel>
-    <label>Merchandise</label>
+    <label>Invoice</label>
     <nameField>
-        <label>Merchandise Name</label>
-        <type>Text</type>
+        <displayFormat>INV-{0000}</displayFormat>
+        <label>Invoice Number</label>
+        <type>AutoNumber</type>
     </nameField>
-    <pluralLabel>Merchandises</pluralLabel>
-    <searchLayouts>
-        <searchResultsAdditionalFields>Merchandise_Price__c</searchResultsAdditionalFields>
-    </searchLayouts>
-    <sharingModel>Private</sharingModel>
+    <pluralLabel>Invoices</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
     <fields>
-        <fullName>City__c</fullName>
+        <fullName>Invoice_Desc__c</fullName>
         <externalId>false</externalId>
-        <label>City</label>
-        <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <controllingField>Country__c</controllingField>
-            <restricted>true</restricted>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>KOLKATA</fullName>
-                    <default>false</default>
-                    <label>KOLKATA</label>
-                </value>
-                <value>
-                    <fullName>MUMBAI</fullName>
-                    <default>false</default>
-                    <label>MUMBAI</label>
-                </value>
-                <value>
-                    <fullName>NEW YORK</fullName>
-                    <default>false</default>
-                    <label>NEW YORK</label>
-                </value>
-                <value>
-                    <fullName>CHICAGO</fullName>
-                    <default>false</default>
-                    <label>CHICAGO</label>
-                </value>
-            </valueSetDefinition>
-            <valueSettings>
-                <controllingFieldValue>IND</controllingFieldValue>
-                <valueName>KOLKATA</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>IND</controllingFieldValue>
-                <valueName>MUMBAI</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>USA</controllingFieldValue>
-                <valueName>NEW YORK</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>USA</controllingFieldValue>
-                <valueName>CHICAGO</valueName>
-            </valueSettings>
-        </valueSet>
-    </fields>
-    <fields>
-        <fullName>Country__c</fullName>
-        <externalId>false</externalId>
-        <label>Country</label>
-        <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>IND</fullName>
-                    <default>false</default>
-                    <label>IND</label>
-                </value>
-                <value>
-                    <fullName>USA</fullName>
-                    <default>false</default>
-                    <label>USA</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
-        <fullName>Merchandise_Desc__c</fullName>
-        <externalId>false</externalId>
-        <label>Merchandise Desc</label>
+        <label>Invoice Desc</label>
         <required>false</required>
         <trackTrending>false</trackTrending>
         <type>TextArea</type>
     </fields>
     <fields>
-        <fullName>Merchandise_Price__c</fullName>
+        <fullName>Invoice_Status__c</fullName>
         <externalId>false</externalId>
-        <label>Merchandise Price</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackTrending>false</trackTrending>
-        <type>Currency</type>
-    </fields>
-    <fields>
-        <fullName>Merchandise_Stock_Add__c</fullName>
-        <caseSensitive>false</caseSensitive>
-        <externalId>false</externalId>
-        <label>Merchandise Stock Add</label>
-        <length>100</length>
+        <label>Invoice Status</label>
         <required>false</required>
         <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>true</unique>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Open</fullName>
+                    <default>false</default>
+                    <label>Open</label>
+                </value>
+                <value>
+                    <fullName>Closed</fullName>
+                    <default>false</default>
+                    <label>Closed</label>
+                </value>
+                <value>
+                    <fullName>Bargain</fullName>
+                    <default>false</default>
+                    <label>Bargain</label>
+                </value>
+                <value>
+                    <fullName>Finalized</fullName>
+                    <default>false</default>
+                    <label>Finalized</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
 </CustomObject>
